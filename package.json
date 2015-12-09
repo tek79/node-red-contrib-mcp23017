@@ -1,0 +1,14 @@
+{
+    "name"         : "node-red-contrib-mcp23017",
+    "version"      : "0.0.1",
+    "description"  : "MCP23017 controller",
+    "dependencies": {
+		"node-mcp23017":"0.0.2"
+    },
+    "keywords": [ "node-red", "mcp23017", "raspberry pi", "inout/output" ],
+    "node-red"     : {
+        "nodes": {
+            "mcp23017": "mcp23017/mcp23017.js"
+        }
+    }
+}
