@@ -16,7 +16,7 @@ This is because I'm working with Sainsmart relay boards. See to-do below!
 
 In order to use this module with the Raspberry Pi running Raspbian you have to have [node.js](https://nodejs.org/) and [node-mcp23017](https://github.com/kaihenzler/node-mcp23017)
 
-##Installation
+## Installation
 
 install via npm. just type the following in the terminal/console
 
