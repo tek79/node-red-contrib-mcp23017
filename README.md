@@ -28,7 +28,7 @@ npm install node-red-contrib-mcp23017
 ## Usage
 
 ### Sample Workflow
-![Sample Workflow](workflow.png)
+![Sample Workflow](https://github.com/afulki/node-red-contrib-mcp23017/raw/master/workflow.png)
 
 This workflow shows a number of possible triggers feeding the common hardware interface node. The hardware is controlled via the contened of the payload (ON|OFF) and the Topic provided.
 
@@ -50,7 +50,7 @@ Status does not need or rather ignores the payload:
 When the status topic is received, the node generates a message per pin as a json object and it can be routed out to MQTT as shown in the example above.
 
 ### Configuration
-![Node Configuration](configure.png)
+![Node Configuration](https://github.com/afulki/node-red-contrib-mcp23017/raw/master/configure.png)
 
 #### Topic
 
@@ -62,7 +62,7 @@ The topic is used to define the root of the outgoinf topic for status messages, 
 ````
 
 ### Example Inject to get status
-![Inject Node Configuration](get-status.png)
+![Inject Node Configuration](https://github.com/afulki/node-red-contrib-mcp23017/raw/master/get-status.png)
 
 ## To Do
 
