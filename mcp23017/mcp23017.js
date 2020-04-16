@@ -78,16 +78,19 @@ module.exports = function(RED) {
 
         function mcp23017_send_status() {
             for (var pin = 0; pin < 16; pin++) {
-                mcp.digitalRead(pin, function(err, value) {
-                    node.log("Pin " + pin + " - " + value);
-                    var statusMsg = {};
-                    statusMsg.topic = node.topic + pin;
+
+                // mcp.pinMode(_pin, mcp.INPUT); //if you want them to be inputs
+                // mcp.pinMode(_pin, mcp.INPUT_PULLUP); //if you want them to be pullup inputs
+                mcp.digitalRead(_pin, function(pin, err, value) {
+
+                    var statusMsg = {}
+                    statusMsg.topic = node.topic + pin
                     statusMsg.payload = {
                         pin: pin,
-                        value: (value) ? "OFF" : "ON"
-                    };
-                    node.send(statusMsg);
-                });
+                        value: value ? 'OFF' : 'ON'
+                    }
+                    node.send(statusMsg)
+                })
             }
         }
 
