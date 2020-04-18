@@ -1,9 +1,9 @@
 {
     "name"         : "node-red-contrib-mcp23017",
-    "version"      : "0.0.1",
+    "version"      : "0.0.2",
     "description"  : "MCP23017 controller",
     "dependencies" : {
-		"node-mcp23017":"0.0.2",
+		"node-mcp23017":"0.0.5",
 	    	"i2c":"0.2.2"
     },
     "license"     : "Apache-2.0",
