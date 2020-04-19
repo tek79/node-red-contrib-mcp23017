@@ -77,7 +77,7 @@ module.exports = function(RED) {
         }
 
         function mcp23017_send_status() {
-            for (var pin = 0; pin < 16; pin++) {
+            for (var _pin = 0; _pin < 16; _pin++) {
 
                 // mcp.pinMode(_pin, mcp.INPUT); //if you want them to be inputs
                 // mcp.pinMode(_pin, mcp.INPUT_PULLUP); //if you want them to be pullup inputs
